@@ -5,6 +5,7 @@ langchain_community
 langchain_together
 langchain_google_genai
 PyPDF2
+pypdf
 faiss-cpu
 streamlit
 -e .
