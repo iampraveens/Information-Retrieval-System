@@ -51,12 +51,13 @@ def main():
         st.title("☰ Menu")
         with st.form("upload_and_query_form"):
                 pdf_docs = st.file_uploader(
-                    "Upload your PDF file and enter your question below",
+                    "Upload your PDF file here:",
                     accept_multiple_files=True, 
                     type=["pdf"]
                 )
                 
-                submit_button = st.form_submit_button("Submit")
+                st.markdown("# **🚨Click the `SUBMIT BUTTON` to Process your PDF file🚨**")
+                submit_button = st.form_submit_button("Submit", type="primary")
                     
                 if submit_button:
                     with st.spinner("Processing..."):
