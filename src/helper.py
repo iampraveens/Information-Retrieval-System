@@ -104,7 +104,7 @@ def get_conversation_chain(vectorstore):
             used to generate text based on a prompt, where the generated text is
             informed by the vectorstore.
     """
-    llm = Together(model="mistralai/Mistral-7B-Instruct-v0.3", 
+    llm = Together(model="google/gemma-2-27b-it", 
                    api_key=TOGETHER_API_KEY, max_tokens=512)
     memory = ConversationBufferMemory(memory_key= "chat_history", 
                                       return_messages=True)
